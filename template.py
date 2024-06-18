@@ -2,18 +2,20 @@ import os
 from pathlib import Path
 import logging
 import pandas as pd
+import numpy as np
 
 logging.basicConfig(level=logging.INFO,format='[%(asctime)s]:%(message)s:')
 
 list_of_files = [
     "src/__init__.py",
-    "src/helper",
-    "src/prompts",
+    "src/helper.py",
+    "src/prompt.py",
     ".env",
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
-    "app.py"
+    "app.py",
+
 ]
 
 for filepath in list_of_files:
